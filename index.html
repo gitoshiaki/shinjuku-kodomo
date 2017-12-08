@@ -20,10 +20,10 @@
         <!-- メニューバー -->
         <header>
             <ul class = "dmenu">
-                <li><a href ="#">NEWS</a></li>
-                <li><a href ="#">ABOUT US</a></li>
-                <li><img src = "img/logo.png" class = "logo1"></li>
-                <li><a href ="#">ACTIVITY</a></li>
+                <li><a href ="#news">NEWS</a></li>
+                <li><a href ="#aboutus">ABOUT US</a></li>
+                <li><a href = "top.html"><img src = "img/logo.png" class = "logo1"></a></li>
+                <li><a href ="activity/activity.html">ACTIVITY</a></li>
                 <li id = "bam"><a href ="#">BECOME<br>A MEMBER</a></li>
             </ul>
         </header>
@@ -40,7 +40,7 @@
         </div>
         </div>
         <section class = "border1"></section>
-        <div class = "contents1">
+        <div class = "contents1" id = "news">
             <div class = "titleborder">
             <img src = "img/title_news.png" class = "title">
         </div>
@@ -63,13 +63,13 @@
 
         </div>
         <section class = "border1_2"></section>
-        <div class = "contents2">
+        <div class = "contents2" id = "aboutus">
             <div class = "titleborder tbabs">
                 <img src = "img/title_abs.png" class = "title abs">
             </div>
             <div class = "c1s abss">
                 <p>
-                    <span class = "jptit">新宿こども劇場とは</span><br>
+                    <span class = "jptit">新宿子ども劇場とは</span><br>
                      <span class = "abscop">すべての子どもたちに文化経験を</span><br>
                      新宿子ども劇場は1975年に新宿の地に誕生し、<br>
                      2005年にはNPO法人になり活動の幅も広がりました。<br>
@@ -245,9 +245,9 @@
                 <div class = "ottext1"><p class = "ottext2">
                     表現の世界には魔物が住んでいるといいます。とてつもない謎のパワーを発揮するという・・・残念ながら出没予測は無理。
                         でもヒントは有るんです！<br>
-
+                        
                         ―魔物は優れたステージに現れる―<br>
-
+                        
                         この真実を、どうやら「こども劇場」は知ってしまったらしい・・・・
                         みなさん、摩訶不思議な魔物に出逢う旅でお逢いしましょう！</p>
                     </div>
@@ -257,8 +257,14 @@
             </div>
         </div>
         <!-- 地図 -->
-        <div class = "ggmap">
+        <div class = "ggmap" id = "access">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3240.0543967975414!2d139.72771331542043!3d35.70027898018983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cf849032557%3A0x710218364dbf4d72!2z44CSMTYyLTA4NTMg5p2x5Lqs6YO95paw5a6_5Yy65YyX5bGx5LyP55S677yS4oiS77yR77yX!5e0!3m2!1sja!2sjp!4v1512442785062" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+        </div>
+        <!-- 地図詳細 -->
+        <div class = "mapdet">
+            <p>新宿子ども劇場・事務所<br>
+            東京都新宿区北山伏町2-17<br>
+            TEL/FAX: 03-5261-8696　(火・水・金・土 10:00-17:00 )</p>
         </div>
         </div>
         <div class = "content6">
@@ -266,8 +272,8 @@
             　<div class = "ht-content"><!--1-->
                 <p class = "hooter-text1">ホーム</p>
                 <ul class = "hooter-text2">
-                    <li><a href = "#">新宿こども劇場とは</a></li>
-                    <li><a href = "#">アクセス</a></li>
+                    <li><a href = "#aboutus">新宿こども劇場とは</a></li>
+                    <li><a href = "#access">アクセス</a></li>
                 </ul>
                 <div class = "htt2">
                 <p class = "hooter-text1">入会について</p>
