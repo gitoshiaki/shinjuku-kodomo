@@ -164,7 +164,7 @@ img{
     margin-top: -10%;
 }
 .contents3{
-    height: 150vh;
+    height: 175vh;
     width: 100%;
     position: relative;
     z-index: 111;
@@ -461,7 +461,7 @@ img{
 .content5{
     position: relative;
     width: 100%;
-    height: 160vh;
+    height: auto;
 }
 .com1{
     margin-top: -5%;
@@ -539,6 +539,17 @@ img{
     width: 100%;
     height: 100%;
     }
+    .mapdet{
+        position: absolute;
+        bottom:6vh;
+        left: 7vw;
+        width: 40vw;
+        height: 11vh;
+        background-color: rgb(255,202,40);
+        padding: 0.4%;
+        color: rgb(78,52,46);
+        font-size: 1.2vw;
+    }
 .content6{
     position: relative;
     width: 100%;
@@ -615,6 +626,6 @@ img{
 .picchild{
     width: 30vw;
     position: absolute;
-    bottom:25vh;
+    bottom:20vh;
     right: 17vw;
 }
