@@ -88,6 +88,8 @@ https://shinjuku-kodomo.herokuapp.com/
 7. Javascriptでバリデーションを実装
 8. 公開、テスト
 
+<br/>
+
 ## Contents Management System  
 
 Wordpressを使用するが、カスタマイズする上で、基本的な仕組みなど事前に覚えることも多いため、チュートリアルを通して概観を掴むのが良い。以下のチュートリアルでは最低限テーマを構成するのに必要なファイルのみ用意して、簡単なブログシステムを作成する。
