@@ -92,9 +92,20 @@ https://shinjuku-kodomo.herokuapp.com/
 
 Wordpressを使用するが、カスタマイズする上で、基本的な仕組みなど事前に覚えることも多いため、チュートリアルを通して概観を掴むのが良い。以下のチュートリアルでは最低限テーマを構成するのに必要なファイルのみ用意して、簡単なブログシステムを作成する。
 
-### チュートリアル
+**前提知識**  
+- phpの基本構文
+- wordpressのテンプレート構造
+- wordpressのテンプレートタグ
 
+<br/>
 
+**参考資料**  
+- [Progate PHPコース](https://prog-8.com/languages/php)
+- [Wordpress Codex (公式ドキュメント)](https://wpdocs.osdn.jp/%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E4%BD%9C%E6%88%90)
+
+<br/>
+
+**チュートリアル**  
 
 1. MAMPをインストールしてWordpressが動作する環境を構築
 	1. [公式サイト](https://www.mamp.info/en/)からダウンロードしてインストール
