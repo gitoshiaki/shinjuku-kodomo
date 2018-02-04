@@ -32,7 +32,7 @@ https://shinjuku-kodomo.herokuapp.com/
 3. リモートリポジトリからプロジェクトをダウンロードする。  
 
   ```
-  git clone https://github.com/gitoshiaki/shinjuku-kodomo.git`
+  git clone https://github.com/gitoshiaki/shinjuku-kodomo.git
   ```
 
 4. 3で作成されたローカルリポジトリに移動する。今後このディレクトリにいる前提で進める。
