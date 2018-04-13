@@ -1,0 +1,389 @@
+/*
+Theme Name: tutorial
+*/
+
+/* top-contentのCSS */
+h1,
+h2,
+h3,
+p,
+ul,
+li,
+img,
+body,
+div,
+section,
+a{
+    margin:0;
+    padding: 0;
+}
+img{
+    border:0;
+    max-width: 100%;
+    height: auto;
+}
+html{
+    -webkit-text-size-adjust: 100%;
+}
+/* ここからが本番 */
+.wrapper{
+    display: block;
+    width: 100%;
+    background-color: rgb(227,235,47);
+    background-image: -webkit-gradient(linear, 0 0, 100% 0, color-stop(.5, rgb(232,239,112)), color-stop(.5, transparent), to(transparent));
+    background-image: -moz-linear-gradient(left, rgb(232,239,112) 50%, transparent 50%, transparent);
+    background-image: -o-linear-gradient(left, rgb(232,239,112) 50%, transparent 50%, transparent);
+    background-image: linear-gradient(left, rgb(232,239,112) 50%, transparent 50%, transparent);
+    -webkit-background-size: 70px 70px;
+    -moz-background-size: 70px 70px;
+    background-size: 70px 70px;
+    margin: 0;
+    padding: 0;
+}
+.top-wrapper{
+    position: relative;
+    width: 100%;
+    height: auto;
+    background-color: rgb(202,215,88);
+}
+.pic1{
+    width: 100vw;
+}
+.pic2{
+    width: 100vw;
+    margin-top: -21.2vw;
+    vertical-align: bottom; 
+    
+}
+.prev-theme{
+    width: 31vw;
+    color:rgb(96,56,19);
+    font-size: 6.2vw;
+    position: absolute;
+    bottom: 5.5vw;
+    right: 0;
+    left: 0;
+    margin: auto;
+}
+.top-line{
+    width: 100vw;
+    height: 1.5vw;
+    background-color: rgb(96,56,19);
+}
+.footer{
+    width: 100vw;
+    position: relative;
+    height: 36vw;
+    background: linear-gradient(rgb(191,221,80), rgb(128,204,51));
+}
+.pic3{
+    position: absolute;
+    width: 16vw;
+    left: 0;
+    bottom: 0;
+}
+.pic4{
+    position: absolute;
+    width: 15.5vw;
+    left: 20vw;
+    bottom: 6.5vw;
+}
+.pic5{
+    position: absolute;
+    width: 33vw;
+    right: 5vw;
+    bottom: 0;
+}
+/* the end */
+
+.p-content{
+    position: relative;
+    width: 86%;
+    height: 210vw;
+    border-radius: 1vw;
+    border: 0.6vw solid rgb(77,52,45);
+    background: rgba(246,246,246,0.9);
+    margin: 0 auto;
+    margin-top: 4rem;
+    padding-bottom: 3rem;
+    margin-bottom: -6.5rem;
+    z-index: 10;
+}
+
+.posts {
+    width: 63%;
+    margin-top: 1.5rem;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+}
+
+.post {
+    position: relative;
+    list-style: none;
+    padding: 0rem 1.5rem;
+    width: 92%;
+    border-bottom: 0.3vw dotted rgb(244,195,49);
+    margin-bottom: 1rem;
+}
+.sspost {
+    list-style: none;
+    padding: 0rem 1.5rem;
+    width: 92%;
+    margin-bottom: 1rem;
+}
+.sp-icon{
+    width: 12%;
+    position: absolute;
+    bottom:0;
+    left: 31%;
+}
+.p-content img{
+    margin: 0;
+    padding: 0;
+}
+.eye-catch{
+    display: inline-block;
+    width: 40%;
+}
+.eye-catch img{
+    border: 0.3vw solid rgb(244,195,49);
+}
+.post-contents{
+    display: inline-block;
+    width: 55%;
+    margin-left: 3%;
+    font-size: 1.2vw;
+}
+.titleName-1{
+    font-size: 1.8rem;
+}
+.ptags{
+    background-color:rgb(255,202,40);
+    margin: 0.3vw;
+    padding: 0.5vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    font-size: 0.7rem;
+}
+.post_time {
+    margin: 0;
+    color: rgb(77,52,45);
+    font-size: 0.6rem;
+    margin-top: 1em;
+    margin-left: 1em;
+}
+.tag-text-1{
+    font-size:0.8em;
+}
+.eye-catch-1{
+    width: 90%;
+    margin-bottom: 2em;
+}
+p {
+    margin: .5rem 0 0;
+    color: rgb(77,52,45);
+}
+h2{
+    color: rgb(77,52,45);
+}
+
+.index-text{
+    position: absolute;
+    top: 2.5em;
+    right: 2%;
+    width: 26%;
+}
+.index-text h2{
+    display: inline-block;
+    vertical-align: top;
+    font-size: 2.3vw;
+    font-weight: lighter;
+}
+.index-pic{
+    display: inline-block;
+    vertical-align: top;
+    width: 18%;
+    margin-top: 1em;
+}
+.tag-list{
+    width:26%;
+    position: absolute;
+    right: 4%;
+    top: 15vh;
+}
+.tag-each{
+    list-style: none;
+    background-color:rgb(255,202,40);
+    margin: 0.3vw;
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    float: left;
+    font-size: 1vw;
+}
+.tag-command{
+    width: 10%;
+}
+a{
+    text-decoration: none;
+    color: rgb(77,52,45);
+}
+.popular-posts{
+    width: 26%;
+    position: absolute;
+    height: auto;
+    right: 4%;
+    top: 65em;
+}
+.popular_thumbnail{
+    width: 25%;
+}
+.popular-list img{
+    border: 0.3vw solid rgb(244,195,49);
+}
+
+.popular-list{
+    width: 25vw;
+    position: relative;
+}
+.popular_entrytitle{
+    font-size: 1.1vw;
+    position: absolute;
+    bottom: 50%;
+    right: 12%;
+    margin: auto;
+    width: 48%;
+}
+ol{
+    color: rgb(77,52,45);
+    margin: 0;
+    padding: 0;
+}
+h2{
+    font-size: 1.5vw;
+}
+
+/* ページネーションの装飾 */
+.pagenation {
+    margin: 1em 0;
+    font-size: 1.5vw;
+}
+.pagenation:after, .pagenation ul:after {
+    clear: both;
+    content: ".";
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+.pagenation ul {
+    margin: 0;
+}
+.pagenation li {
+    float: left;
+    list-style: none outside none;
+    margin-left: 3px;
+}
+.pagenation li:first-child {
+    margin-left: 0;
+}
+.pagenation li.active {
+    background-color: rgb(161,147,136);
+    border-radius: 0.8vw;
+    color: #FFFFFF;
+    cursor: not-allowed;
+    padding: 1vw 2vw;
+}
+.pagenation li a {
+    background: none repeat scroll 0 0 rgb(241,147,25);
+    border-radius: 0.8vw;
+    color: #FFFFFF;
+    display: block;
+    padding: 1vw 2vw;
+    text-decoration: none;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.2);
+}
+.pagenation li a:hover {
+    background-color: rgb(77,52,45);
+    color: #FFFFFF;
+    opacity: 0.8;
+    transition-duration: 500ms;
+    transition-property: all;
+    transition-timing-function: ease;
+}
+
+.pp-menu{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    margin: auto;
+    width: 43%;
+}
+/* 月別アーカイブ */
+.archive-lists{
+    position: absolute;
+    right: 4%;
+    top: 39em;
+    width: 26%;
+}
+.archive-list{
+    font-size: 1vw;
+    list-style: none;
+    width: 100%;
+    /* margin-top: 3%; */
+}
+.archive-list span{
+    font-size: 1.2vw;
+}
+
+.archive-list li ul li{
+    background-color:rgb(255,202,40);
+    margin: 0.3vw;
+    padding: 0.6vw;
+    border-radius: 0.5vw;
+    text-align: center;
+    list-style-type: none;
+    float: left;
+    
+}
+.left-liner{
+    width: 100%;
+    height: auto;
+    padding: 2%;
+    border-left: 0.3vw solid rgb(249,116,0);
+    margin-bottom: 6%;
+}
+.contents-wrapper{
+    width: 100%;
+    position: relative;
+}
+/* 背景画像 */
+
+/* 共通設定 */
+.bg{
+    position: absolute;
+    overflow-x: hidden;
+    height: auto;
+    z-index: 0;
+}
+/* 個別設定 */
+.icon1{
+    top: 4%;
+    left: 0;
+    width: 11%;
+}
+.icon2{
+    top: -1.5%;
+    right: 0;
+    width: 18%;
+}
+.icon3{
+    bottom: 50vw;
+    left: 0;
+    width: 10%;
+}
+.icon4{
+    bottom: 50vw;
+    right: 0;
+    width: 14%;
+}
