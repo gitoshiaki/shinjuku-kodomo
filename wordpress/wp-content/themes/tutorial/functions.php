@@ -7,6 +7,8 @@ wp_enqueue_style( 'parent-style', get_template_directory_uri() . '/style.css' );
 }
 // アイキャッチ画像を有効にする。
 add_theme_support('post-thumbnails');
+// アイキャッチ画像の表示の仕方を指定（切り抜き）
+set_post_thumbnail_size(520, 220, true );
 // サイドバーの表示
 register_sidebar(); 
 
@@ -53,8 +55,6 @@ function my_custom_display_popular_posts($query) {
     function my_custom__before_loop() {
             echo '<h3>アクセス数が多い人気順</h3>';
     }
-
-    set_post_thumbnail_size( 400,400, array( 'center', 'center')  ); // 50 pixels wide by 50 pixels tall, crop from the center
 
 //     ページネーション
 function pagination($pages = '', $range = 2)

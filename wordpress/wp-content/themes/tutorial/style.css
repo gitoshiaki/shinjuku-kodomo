@@ -27,6 +27,7 @@ html{
 }
 /* ここからが本番 */
 .wrapper{
+    position: relative;
     display: block;
     width: 100%;
     background-color: rgb(227,235,47);
@@ -48,16 +49,22 @@ html{
 }
 .pic1{
     width: 100vw;
+    display: block;
 }
 .pic2{
     width: 100vw;
     margin-top: -21.2vw;
-    vertical-align: bottom; 
-    
+    display: block;
 }
+.pic-smh{
+    display: none;
+}
+
 .prev-theme{
     width: 31vw;
     color:rgb(96,56,19);
+    border-bottom: 0.4vw solid rgb(96,56,19);
+    padding:0 2vw;
     font-size: 6.2vw;
     position: absolute;
     bottom: 5.5vw;
@@ -118,12 +125,16 @@ html{
 }
 
 .post {
+    display: block;
     position: relative;
     list-style: none;
     padding: 0rem 1.5rem;
     width: 92%;
     border-bottom: 0.3vw dotted rgb(244,195,49);
     margin-bottom: 1rem;
+}
+.posts_smh{
+    display: none;
 }
 .sspost {
     list-style: none;
@@ -176,8 +187,15 @@ html{
     font-size:0.8em;
 }
 .eye-catch-1{
-    width: 90%;
+    position: relative;
+    width: 55%;
     margin-bottom: 2em;
+}
+.sp-icon2{
+    width: 30%;
+    position: absolute;
+    bottom:-4%;
+    right: -1%;
 }
 p {
     margin: .5rem 0 0;
@@ -188,6 +206,7 @@ h2{
 }
 
 .index-text{
+    display: block;
     position: absolute;
     top: 2.5em;
     right: 2%;
@@ -206,6 +225,7 @@ h2{
     margin-top: 1em;
 }
 .tag-list{
+    display: block;
     width:26%;
     position: absolute;
     right: 4%;
@@ -229,6 +249,7 @@ a{
     color: rgb(77,52,45);
 }
 .popular-posts{
+    display: block;
     width: 26%;
     position: absolute;
     height: auto;
@@ -312,15 +333,13 @@ h2{
 }
 
 .pp-menu{
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
     margin: auto;
     width: 43%;
+    margin: 0 auto;
 }
 /* 月別アーカイブ */
 .archive-lists{
+    display: block;
     position: absolute;
     right: 4%;
     top: 39em;
@@ -361,6 +380,7 @@ h2{
 
 /* 共通設定 */
 .bg{
+    display: block;
     position: absolute;
     overflow-x: hidden;
     height: auto;
@@ -386,4 +406,181 @@ h2{
     bottom: 50vw;
     right: 0;
     width: 14%;
+}
+.index-text_smh, .tag-list_smh, .archive-lists_smh{
+    display: none;
+}
+.sp-icon22{
+    display: none;
+}
+
+@media screen and (max-width:620px){
+
+    .pic1{
+        display: none;
+    }
+    .pic2{
+        display: none;
+    }
+    .pic-smh{
+        display: block;
+        width: 100vw;
+    }
+    .prev-theme {
+        width: 70vw;
+        font-size: 13vw;
+        bottom: 9.5vw;
+    }
+    .bg{
+        display: none;
+    }
+    .p-content{
+        margin-top: 0.7rem;
+        height: auto;
+        border-radius: 4vw;
+    }
+    .posts{
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+    }
+    .post{
+        display: block;
+        width: 100%;
+        padding: 0;
+        position: relative;
+        height: 21em;
+    }
+    .eye-catch{
+        display: block;
+        width: 100%;
+        position: absolute;
+        top: 4em;
+    }
+    .post-contents{
+        display: block;
+    }
+    .titleName{
+        width:75%;
+        position: absolute;
+        top: 0;
+        font-size: 4vw;
+        line-height: 98%;
+    }
+    .post_time{
+        width: 30%;
+        position: absolute;
+        top: 1em;
+        right: 0;
+    }
+    .tag-text{
+        width: 100%;
+        position: absolute;
+        top: 2.5em;
+    }
+    .p-sentence{
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+    }
+    .sp-icon{
+        display: block;
+        position: absolute;
+        bottom:14%;
+        left: 75%;
+        width: 30%;
+        z-index: 4;
+    }
+
+        /* サイドバー設定 */
+        .index-text, .tag-list, .popular-posts, .archive-lists{
+            display: none;
+        }
+        .index-text_smh, .tag-list_smh, .archive-lists_smh{
+            display: block;
+            margin-left: 2%;
+        }
+        .index-text_smh{
+            width: 39%;
+            position: relative;
+        }
+        .index-text_smh h2{
+            font-size: 5vw;
+        }
+        .index-pic{
+            position: absolute;
+            right: 0;
+            top: -4%;
+            width: 21%;
+        }
+    .left-liner{
+        width: 39%;
+        font-size: 5vw;
+        margin-top: 1.5em;
+    }
+    .tag-list_smh{
+        width: 90%;
+    }
+    .tag-each{
+        margin: 1%;
+        padding: 1.6vw;
+        border-radius: 2vw;
+    }
+    .archive-lists_smh{
+        margin-top: 14em;
+    }
+
+    /* single.php */
+    .sspost{
+        list-style: none;
+        padding: 0;
+        width: 92%;
+        margin-bottom: 1rem;
+    }
+    .sspc{
+        height: auto;
+    }
+    .p-sentence1 {
+        width: 100%;
+    }
+    .tag-text-1{
+        margin-left: 1%;
+        margin-top: 5%;
+    }
+    
+    .ptags{
+        background-color:rgb(255,202,40);
+        margin: 0.8vw;
+        padding: 1vw;
+        border-radius: 1vw;
+        text-align: center;
+        font-size: 0.7rem;
+    }
+    .post_time1 {
+        width: 30%;
+        position: absolute;
+        top: 5em;
+        right: 0;
+        font-size: 1vw;
+    }
+    .eye-catch-1 {
+        position: relative;
+        width: 100%;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+    .sp-icon2{
+        width: 30%;
+        position: absolute;
+        bottom:-4%;
+        right: -5%;
+    }
+    .sp-icon22{
+        width: 30%;
+        position: absolute;
+        bottom:12%;
+        right: 18%;
+        z-index: 4;
+    }
 }

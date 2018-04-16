@@ -4,6 +4,8 @@
         <meta charset="<?php bloginfo( 'charset' ); ?>" />
         <title><?php wp_title(); ?></title> <!-- 管理画面から設定するサイトタイトルが表示される -->
         <link rel="stylesheet" href="<?php echo get_stylesheet_directory_uri(); ?>/style.css"  type="text/css" media="screen" /> <!-- 先程作成したスタイルシートをインクルード -->
+                <!-- ビューポートの設定 -->
+	<meta name="viewport" content="width=device-width,initial-scale=1">
         <?php wp_head(); ?> <!-- 各種Wordpressスクリプトをインクルード -->
     </head>
   <body>
@@ -11,6 +13,7 @@
   <div class = "top-wrapper">
   <img src="<?php echo get_template_directory_uri(); ?>/images/pic1.png" class = "pic1">
   <img src = "<?php echo get_template_directory_uri(); ?>/images/pic2.png" class = "pic2">
+  <img src = "<?php echo get_template_directory_uri(); ?>/images/pic-smh.png" class = "pic-smh">
    <h2 class = "prev-theme">過去の活動</h2>
   </div>
   <section class = "top-line"></section>
@@ -32,12 +35,14 @@ if(has_tag("鑑賞会")== "true"){
 <?php
 }
 ?>
+
             <!-- アイキャッチ表示 -->
           <div class = "eye-catch">
             <?php $thumb = get_the_post_thumbnail( $post_id, 'post-thumbnail' );
             echo $thumb;
             ?>
             </div>
+
             <div class = "post-contents">
             <!-- タイトル表示 -->
             <h2 class = "titleName"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
@@ -51,6 +56,10 @@ if(has_tag("鑑賞会")== "true"){
             <?php the_excerpt(); ?>
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">続きを読む</a>
 </div>
+            <!-- タイトル表示 -->
+            <h2 class = "titleName_smh"><a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>">
+            <?php the_title(); ?>
+            </a></h2>
 </div>
           </li>
         <?php endwhile; else : ?>
