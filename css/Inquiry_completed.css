@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@media screen and (min-width:901px){
+
+*{
+    margin:0;
+    padding:0;
+}    
+body{
+    width:100%;
+}
+#completed{
+    background-image:url("../img/back_inquiry_pc.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:50%;
+}
+h1{
+    text-align: center;
+    padding: 35% 0 3% 0;
+    color:#4D342D;
+    font-family: "Rounded Mplus 1c";
+    font-size: 2.4vw;
+}
+h2{
+    text-align: center;
+    color: #4D342D;
+    font-family: "Rounded Mplus 1c";
+    font-size: 1.5vw;
+    font-weight: 500;
+    padding-top: 0.2%;
+}
+p{
+    text-align: center;
+    color: #4D342D;
+    font-family: "Rounded Mplus 1c";
+    font-size: 1.5vw;
+    padding-top: 3%;
+    font-weight: 500;
+}
+.go_home{
+    margin: 0 auto;
+    display:block;
+    padding:5% 0 10%;
+}
+
+}
+
+/*ここからSP対応*/
+@media screen and (max-width:900px){
+
+*{
+    margin:0;
+    padding:0;
+}    
+
+#completed{
+    background-image:url("../img/back_inquiry_sp.jpg");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:50%;
+}
+h1{
+    text-align: center;
+    padding: 85% 0 3% 0;
+    color: #4D342D;
+    font-family: "Rounded Mplus 1c";
+    font-size: 5.4vw;
+    width: 60%;
+    margin: 0 auto;
+}
+h2{
+    text-align: left;
+    color: #4D342D;
+    font-family: "Rounded Mplus 1c";
+    font-size: 3.5vw;
+    font-weight: 400;
+    padding-top: 0.8%;
+    width: 80%;
+    margin: 0 auto;
+}
+p{
+    text-align: center;
+    color: #4D342D;
+    font-family: "Rounded Mplus 1c";
+    font-size: 3.5vw;
+    padding-top: 5%;
+    font-weight: 400;
+}
+.go_home{
+    margin: 0 auto;
+    display: block;
+    padding: 10% 0 81%;
+    width: 50%;
+}
+
+
+}
+/*ここでSP終わり*/
