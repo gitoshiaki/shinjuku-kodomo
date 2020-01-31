@@ -253,12 +253,18 @@ p {
 <?php the_title(); ?>
 ```
 4. 画像の表示
-htmlでは<img src ="">だったが、phpでは表示されない。
-代わりにphpでは<img src="<?php echo get_template_directory_uri(); ?>画像名">を用いる。
+htmlでは```<img src ="">```だったが、phpでは表示されない。
+代わりにphpでは```<img src="<?php echo get_template_directory_uri(); ?>画像名">```を用いる。
 他にもhtmlとphpで記述は異なるものが多いので注意！<br>
 5. 一覧ページと個別ページ
 ワードプレスには、複数の投稿を１つのページに表示させる一覧ページ、１つの投稿を表示する個別ページがあり、個別ページのファイルはsingle.phpを使う。
 他にもheader.php、footer.phpがある。<br>
+タイトルを表示するコードを
+```<?php the_title(); ?>```
+から
+```<a href="<?php the_permalink() ?>" title="<?php the_title_attribute(); ?>"><?php the_title(); ?></a>```
+に変えると個別ページに飛ぶことができる。<br>
+
 6. 困ったときには、、、、
 ・ワードプレス公式ドキュメント（ヒントサイトのようなもの）を使う。
 - [Wordpress Codex (公式ドキュメント)](https://wpdocs.osdn.jp/%E3%83%86%E3%83%BC%E3%83%9E%E3%81%AE%E4%BD%9C%E6%88%90)
